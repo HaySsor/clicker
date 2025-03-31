@@ -9,7 +9,7 @@ export const UpgradesList = () => {
     return (
         <div className={styled.upgradesListWrapper}>
             {Object.entries(upgrades).map(([key, value]) =>
-                (<UpgradeElement key={value.id} points={points} addUpgrade={addUpgrade} element={value} upgradeName={key}/>))
+                (<UpgradeElement key={key} points={points} addUpgrade={addUpgrade} element={value} upgradeName={key}/>))
             }
         </div>
     )

@@ -21,7 +21,6 @@ type Props = {
 
 export type PointStoreType = {
     points: number,
-    multiplier: number
     upgrades : {[key: string]: UpgradeElementType}
 }
 
@@ -32,14 +31,13 @@ type AppActions =
 
 const DEF_STORE :PointStoreType ={
     points : 0,
-    multiplier : 1,
     upgrades : UpgradesDeFault
 }
 
 const pointReducer = (state : PointStoreType, action :AppActions ) =>{
     switch (action.type) {
         case 'clickedPoint':
-                return {...state, points : state.points + action.payload};
+                return {...state, points : state.points + state.upgrades.additionMultiplier.value + 1};
         case "clickedUpgrade": {
             const { upgradeName, level } = action.payload;
             const upgrade = state.upgrades[upgradeName];

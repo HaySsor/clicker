@@ -47,12 +47,12 @@ export const MainButton = () => {
                     className={styled.clickedEffect}
                     style={{ left: x, top: y }}
                 >
-                    +1
+                    + {upgrades.additionMultiplier.value + 1}
                 </motion.span>
             ))}
 
             <button onClick={handleClick} className={`basic-button ${mainButtonClass()}`}>
-                Punkt + 1
+                Punkt + {upgrades.additionMultiplier.value + 1}
             </button>
         </div>
     )
