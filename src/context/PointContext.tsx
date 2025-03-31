@@ -62,7 +62,7 @@ const pointReducer = (state: PointStoreType, action: AppActions) => {
 
             let newAutoMultiplier
             if (upgradeName === 'towerOne' ||  upgradeName === 'towerTwo' || upgradeName === 'castle') {
-                newAutoMultiplier = state.autoMultiplier + 1
+                newAutoMultiplier = state.autoMultiplier + level
             } else {
                 newAutoMultiplier = state.autoMultiplier
             }
