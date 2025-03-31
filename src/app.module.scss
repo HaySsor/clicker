@@ -3,7 +3,18 @@
   height: 100svh;
   display: flex;
   flex-direction: column;
-  background-color: #F5F8FA;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @media (width > 1024px) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.AppWrapperTop{
   padding: 15px;
+  display: flex;
+  flex-direction: column;
   gap: 30px;
 }

@@ -5,13 +5,16 @@ import {UpgradesList} from "./components/UpgradesList/UpgradesList.tsx";
 
 function App() {
 
-  return (
-    <div className={styled.AppWrapper}>
-      <Visuals />
-      <MainButton />
-      <UpgradesList />
-    </div>
-  )
+    return (
+        <div className={styled.AppWrapper}>
+            <div className={styled.AppWrapperTop}>
+                <Visuals/>
+                <MainButton/>
+            </div>
+
+            <UpgradesList/>
+        </div>
+    )
 }
 
 export default App

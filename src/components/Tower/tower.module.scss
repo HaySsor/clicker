@@ -1,0 +1,47 @@
+.buildingWrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.buildingBox{
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+  height: 100%;
+}
+
+.buildingFlor{
+  width: 100%;
+  height: 40px;
+  position: relative;
+  border-radius: 5px;
+  isolation: isolate;
+  background-color: #abb2ae;
+  &:before, &:after{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 7px;
+    border-radius: 2px 2px 0 0;
+    top: -7px;
+    z-index: -1;
+    background-color: #78807a;
+  }
+  &:before{
+    left: 10px;
+  }
+  &:after{
+    right: 10px;
+  }
+}
+
+.buildingRoof{
+  background-color: lightcoral;
+  height: 50px;
+  &:before, &:after{
+    background-color: #c96262;
+  }
+}

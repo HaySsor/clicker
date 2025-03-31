@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 50%;
+  width: 60%;
   flex:  0 0 auto;
 }
 
@@ -45,6 +45,17 @@
 
   &:first-child{
     display: none;
+  }
+
+  &:nth-child(7){
+    &:after{
+      border-right: 1px solid #afaaaa;
+    }
+  }
+  &:nth-child(n + 8 ){
+    &:after{
+      border-top: none;
+    }
   }
 
   &:last-child{

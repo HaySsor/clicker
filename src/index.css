@@ -12,6 +12,7 @@ html{
 
 html, body {
   touch-action: manipulation;
+  background-color: #F5F8FA;
 }
 
 .basic-button{
