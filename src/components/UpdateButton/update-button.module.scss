@@ -1,0 +1,13 @@
+.updateButtonClass{
+  padding: 8px 16px;
+  background-color: lightgreen;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.updateButtonClassDisabled{
+  background-color: lightgrey;
+  color: gray;
+  cursor: not-allowed;
+}
